@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link href="https://fonts.googleapis.com/css?family=Manjari:100,400,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="/assets/css/main.css" />
+    <title>Started with GSAP</title>
+  </head> 
+  <body>
+    <h1>Amazing Animated World</h1>
+    <button id="cta">Click me!</button>
+  <div class="panel">
+      <img id="light" src="/assets/images/idea.svg" alt="">
+      <p>Some great line about engineering and how we did something everyone will love.</p>
+      <div class="box"></div>
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <script>
+      
+      document.getElementById('cta').addEventListener('click', function() {
+          TweenMax.to('.panel', 1.5, {scaleY: 1.5, height: '100vh', ease: Circ.easeOut});
+          TweenMax.to('#light', 1, {opacity: 1, y: 200 , delay: 1, ease: Back.easeOut.config(1.7)});
+          TweenMax.to('p', 1, {opacity: 1, y: 200, delay: 1.4});
+          TweenMax.to('.box', 3, {opacity: 1, scale: 1, y: 200, ease:  Elastic.easeOut.config(1, 0.3)});
+      })
+      </script>
+  </body>
+</html>

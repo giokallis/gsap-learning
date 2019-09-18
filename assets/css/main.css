@@ -1,0 +1,65 @@
+body {
+  font-family: 'Manjari', sans-serif;
+  padding: 9rem;
+}
+
+h1 {
+  font-size: 3rem;
+  width: 690px;
+  color: brown;
+  text-align: left;
+}
+
+button {
+  background: none;
+  font-family: 'Manjari', sans-serif;
+  border: 1px solid black;
+  font-weight: 900;
+  cursor: pointer;
+  font-size: 1.7rem;
+  padding: .5rem 1rem;
+}
+
+.panel {
+  position: absolute;
+  width: 55%;
+  bottom: 0;
+  right: 0;
+  background: #EAEAEA;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15% 7%;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+.panel img {
+  width: 120px;
+  float: left;
+  margin-right: 50px;
+  opacity: 0;
+  -webkit-transform: translateY(-200px);
+          transform: translateY(-200px);
+}
+
+.panel p {
+  font-size: 1.9rem;
+  width: 80%;
+  opacity: 0;
+}
+
+.panel .box {
+  border: 3px solid lightgray;
+  width: 600px;
+  height: 200px;
+  position: absolute;
+  left: -1%;
+  top: 25%;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+/*# sourceMappingURL=main.css.map */
